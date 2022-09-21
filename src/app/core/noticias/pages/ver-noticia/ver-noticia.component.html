@@ -1,0 +1,14 @@
+<div>
+    <ul *ngFor="let noticia of listaNoticias;index as i">
+        <h3>
+            {{i}} -
+            {{noticia.titulo}}
+        </h3>
+        <h4>
+            {{noticia.descripcion}}
+        </h4>
+        <p>
+            {{noticia.contenido}}
+        </p>
+    </ul>
+</div>

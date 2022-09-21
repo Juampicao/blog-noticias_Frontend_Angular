@@ -1,0 +1,37 @@
+<div class="my-5">
+    <form [formGroup]="form" action="">
+        <div class="row align-items-center">
+            <label class="col-form-label" for="titulo"> Titulo </label>
+
+        </div>
+        <div class="col-auto">
+            <!-- Identificador del input #newItem -->
+            <input type="text" id="titulo" autocomplete="off" formControlName="titulo">
+        </div>
+
+        <div class="row align-items-center">
+            <label class="col-form-label" for="descripcion"> Descripcion </label>
+
+        </div>
+        <div class="col-auto">
+            <!-- Identificador del input #newItem -->
+            <input type="text" id="descripcion" autocomplete="off" formControlName="descripcion">
+        </div>
+
+        <div class="row align-items-center">
+            <label class="col-form-label" for="contenido"> Contenido </label>
+
+        </div>
+        <div class="col-auto">
+            <!-- Identificador del input #newItem -->
+            <input type="text" id="contenido" autocomplete="off" formControlName="contenido">
+        </div>
+
+        <div class="col-auto">
+            <!-- Tomo el valor del input identificado -->
+            <button (click)="AddNew()" [disabled]="form.invalid" type="button" class="btn btn-primary">
+                Agregar{{ButtonName}}
+            </button>
+        </div>
+    </form>
+</div>
